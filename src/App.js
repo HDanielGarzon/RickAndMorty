@@ -24,8 +24,6 @@ function App() {
       setCharacters(result);
    }
 
-   
-
    return (
       <div className='App'>
          <Nav onSearch={onSearch}/>
