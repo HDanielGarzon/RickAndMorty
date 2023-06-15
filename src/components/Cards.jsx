@@ -1,7 +1,7 @@
 import Card from './Card';
 
 export default function Cards({characters}) {
-   console.log('characters:::::::',characters);
+   //console.log('characters:::::::',characters);
    return(
    <div>
       {
