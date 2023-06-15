@@ -8,12 +8,13 @@ function SearchBar({onSearch}) {
       const value = event.target.value;
       setId(value);
       
+      
    }
 
    return (
       <div>
          <input type='search' onChange={handleChange} value={id}/>
-         <button onClick={()=>onSearch(id)}>Agregar</button>
+         <button onClick={()=>{onSearch(id); setId('')}}>Agregar</button>
       </div>
    );
 }
