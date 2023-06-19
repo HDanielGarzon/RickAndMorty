@@ -13,7 +13,8 @@ function SearchBar({onSearch}) {
 
    return (
       <div>
-         <input type='search' onChange={handleChange} value={id}/>
+         <label htmlFor="search">ID: </label>
+         <input type='search' onChange={handleChange} value={id} placeholder="Ingrese ID"/>
          <button onClick={()=>{onSearch(id); setId('')}}>Agregar</button>
       </div>
    );
