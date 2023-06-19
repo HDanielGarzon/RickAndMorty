@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import validation from './Validation'
 
 export default function Form({login}) {
 
@@ -7,36 +8,18 @@ export default function Form({login}) {
     password:''
   })
 
-  const[errors, setErrors]=useState({
-    email:'',
-    password:''
-  })
+  const[errors, setErrors]=useState({})
 
   const handleChange=(event)=>{
     setUserData({
       ...userData,
       [event.target.name]: event.target.value
     })
-    validate();
+    setErrors(validation({
+      ...userData,
+      [event.target.name]: event.target.value
+    }))
   }
-
-  const validate=()=>{
-    if(!/\S+@\S+\.\S+/.test(userData.email) || !userData.email || userData.email.length>35){
-        setErrors({
-            ...errors,
-            email: 'Email inválido'  
-        })
-    }
-    else setErrors({...errors, email: ''})
-
-    if(Array.isArray(userData.password) && userData.password.some((elem) => isNaN(elem))){
-      setErrors({
-        ...errors,
-        password: 'Contraseña inválida'
-      })
-    }
-    else setErrors({...errors, password: ''})
-}
 
   const handleSubmit=(event)=>{
     event.preventDefault();
