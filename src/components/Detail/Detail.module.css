@@ -1,0 +1,18 @@
+.Detail{
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    margin: 104px;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: greenyellow;
+    text-shadow: 4px 2px 6px hsl(101, 98%, 48%);
+    font-family: cursive;
+    display: grid;
+    justify-content: center;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import style from './Detail.module.css';
 
 export default function Detail() {
 
@@ -21,7 +22,7 @@ export default function Detail() {
      }, [id]);
 
   return (
-    <div>
+    <div className={style.Detail}>
         <h2>{character.name}</h2>
         <h2>Status: {character.status}</h2>
         <h2>Species: {character.species}</h2>

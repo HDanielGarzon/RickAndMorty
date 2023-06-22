@@ -28,16 +28,34 @@ export default function Form({login}) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={style.Form}>
-        <label htmlFor="email" className={style.hijo}>Email: </label>
-        <input name='email' type="email" placeholder='Ingresa tu email' className={style.hijo} onChange={handleChange} value={userData.email}/>
-        {errors.email && <p>{errors.email}</p>}
+    <div className={style.loginbox}>
+      <div >
+        <img src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" alt="Logo de Rick and Morty" className={style.img}/>
+      </div>
+      <h2>Bienvenidos</h2>
+      <form onSubmit={handleSubmit} className={style.Form}>
+        
+        <div className={style.userbox}>
+          <label htmlFor="email" className={style.label}></label>
+          <input name='email' type="email" placeholder='Ingresa tu email' className={style.input} onChange={handleChange} value={userData.email}/>
+          {errors.email && <p className={style.alert}>{errors.email}</p>}
+        </div>
 
-        <label htmlFor="password" className={style.hijo}>Contraseña: </label>
-        <input name='password' type="password" placeholder='Ingresa tu contraseña' className={style.hijo} value={userData.password} onChange={handleChange}/>
-        {errors.password && <p>{errors.password}</p>}
+        <div className={style.userbox}>
+          <label htmlFor="password" className={style.label}></label>
+          <input name='password' type="password" placeholder='Ingresa tu contraseña' className={style.input} value={userData.password} onChange={handleChange}/>
+          {errors.password && <p className={style.alert}>{errors.password}</p>}
+        </div>
 
-        <button className={style.hijo}>Submit</button>
-    </form>
+        <button className={style.button}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+
+      </form>
+    </div>
   )
 }

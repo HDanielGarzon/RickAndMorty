@@ -1,0 +1,9 @@
+.About{
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 7%;
+    color: greenyellow;
+    text-align: justify;
+}
