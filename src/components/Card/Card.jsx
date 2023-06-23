@@ -30,12 +30,12 @@ function Card({id, name, species, origin, image, onClose, addfav, removeFav, myF
    return (
       <div className={style.Card}>
          
-         <button onClick={()=> onClose(id)} className={style.button} >X</button> 
+         <button onClick={()=> onClose(id)} className={style.button} >❌</button> 
          {
             isFav ? (
-               <button onClick={handleFavorite}>❤️</button>
+               <button onClick={handleFavorite}className={style.button}>💙</button>
             ) : (
-               <button onClick={handleFavorite}>🤍</button>
+               <button onClick={handleFavorite}className={style.button}>🤍</button>
             )
          }
         

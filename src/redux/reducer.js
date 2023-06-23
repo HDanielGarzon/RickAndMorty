@@ -5,7 +5,7 @@ const initialState={
 }
 
 const reducer = (state=initialState, action)=>{
-    switch (action.types){
+    switch (action.type){
         case ADD_FAV:
             return{
                 ...state,
@@ -13,6 +13,7 @@ const reducer = (state=initialState, action)=>{
             }
         case REMOVE_FAV:
             return{
+                ...state,
                 myFavorites: state.myFavorites.filter((elem)=> elem.id !== (action.payload))
             }
 
