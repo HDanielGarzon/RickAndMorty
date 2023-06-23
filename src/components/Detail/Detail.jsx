@@ -23,12 +23,15 @@ export default function Detail() {
 
   return (
     <div className={style.Detail}>
-        <h2>{character.name}</h2>
+      <div>
+        <h2>ID: {character.id}</h2>
+        <h2 className={style.name}>{character.name}</h2>
         <h2>Status: {character.status}</h2>
         <h2>Species: {character.species}</h2>
         <h2>Gender: {character.gender}</h2>
         <h2>Origin: {character.origin?.name}</h2>
-        <img src={character.image} alt='' />
+      </div>
+        <img className={style.img} src={character.image} alt='' />
     </div>
   )
 }

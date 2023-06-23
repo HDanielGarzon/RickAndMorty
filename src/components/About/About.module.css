@@ -1,9 +1,23 @@
 .About{
-    font-family: cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 7%;
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    margin: 104px;
+    width: 800px;
+    padding: 40px;
+    /* transform: translate(-50%, -50%); */
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     color: greenyellow;
-    text-align: justify;
+    text-shadow: 4px 2px 6px hsl(101, 98%, 48%);
+    font-family: cursive;
+    
+}
+
+.About h1{
+    font-size: xx-large;
+    font-variant: all-petite-caps;
+    color: white;
 }

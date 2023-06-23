@@ -4,14 +4,22 @@ import { Link } from 'react-router-dom'
 import style from './Nav.module.css';
 
 export default function Nav({onSearch}) {
+
   return (
     <div className={style.bar}>
-        <button className={style.button}>
-          <Link to='/home'>Home</Link>
+
+        <button className={style.button} >
+          <Link to='/home' className={style.routes}>Home</Link>
         </button>
+
         <SearchBar onSearch={onSearch} /> 
+        
         <button className={style.button}>
-          <Link to='/about'>About</Link>
+          <Link to='/about' className={style.routes}>About</Link>
+        </button>
+
+        <button className={style.button}>
+          <Link to='/favorites' className={style.routes}>Favorites</Link>
         </button>
            
     </div>

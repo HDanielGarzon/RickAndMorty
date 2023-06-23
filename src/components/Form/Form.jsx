@@ -37,13 +37,13 @@ export default function Form({login}) {
         
         <div className={style.userbox}>
           <label htmlFor="email" className={style.label}></label>
-          <input name='email' type="email" placeholder='Ingresa tu email' className={style.input} onChange={handleChange} value={userData.email}/>
+          <input name='email' type="email" placeholder='email: ejemplo@gmail.com' className={style.input} onChange={handleChange} value={userData.email}/>
           {errors.email && <p className={style.alert}>{errors.email}</p>}
         </div>
 
         <div className={style.userbox}>
           <label htmlFor="password" className={style.label}></label>
-          <input name='password' type="password" placeholder='Ingresa tu contraseña' className={style.input} value={userData.password} onChange={handleChange}/>
+          <input name='password' type="password" placeholder='la contraseña es: 123456' className={style.input} value={userData.password} onChange={handleChange}/>
           {errors.password && <p className={style.alert}>{errors.password}</p>}
         </div>
 
