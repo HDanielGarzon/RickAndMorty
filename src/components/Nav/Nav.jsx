@@ -15,12 +15,13 @@ export default function Nav({onSearch}) {
         <SearchBar onSearch={onSearch} /> 
         
         <button className={style.button}>
+          <Link to='/favorites' className={style.routes}>Favorites</Link>
+        </button>
+        
+        <button className={style.button}>
           <Link to='/about' className={style.routes}>About</Link>
         </button>
 
-        <button className={style.button}>
-          <Link to='/favorites' className={style.routes}>Favorites</Link>
-        </button>
            
     </div>
   )
