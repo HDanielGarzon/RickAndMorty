@@ -17,7 +17,8 @@ function Favorites({myFavorites}) {
     }
 
   return (
-    <div className={style.titulo}>
+    <div>
+        <div className={style.titulo}>
         <select onChange={handleOrder}>
             <option value="Ascendente">Ascendente</option>
             <option value="Descendente">Descendente</option>
@@ -28,6 +29,10 @@ function Favorites({myFavorites}) {
             <option value="Genderless">Genderless</option>
             <option value="unknown">unknown</option>
         </select>
+
+        </div>
+        <div className={style.contenedor}>
+
         {
             myFavorites?.map(fav=>{
                 return(
@@ -38,12 +43,14 @@ function Favorites({myFavorites}) {
                         species={fav.species}
                         origin={fav.origin.name}
                         image={fav.image}
+                        onClose={fav.onClose}
                         
                     />
                 )
             })
         }
     
+        </div>
     </div>
   )
 }

@@ -54,8 +54,8 @@ html {
     transition: .5s;
   }
   
-  .userbox input:focus ~ label,
-  .userbox input:valid ~ label {
+  .loginbox .userbox .input:focus ~ label,
+  .loginbox .userbox .input:valid ~ label {
     top: -20px;
     left: 0;
     color: #03f40b;
@@ -75,6 +75,7 @@ html {
     margin-top: 40px;
     letter-spacing: 4px;
     background-color: inherit;
+    border: none;
   }
   
   .button:hover {

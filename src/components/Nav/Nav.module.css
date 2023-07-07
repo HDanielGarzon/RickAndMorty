@@ -1,9 +1,10 @@
 .bar{
     display: flex;
     justify-content: space-evenly;
-    background-color: #00fff699;
+    background-color: #00fff7dd;
     color: black;
     font-family: cursive;
+    margin: 12px;
 }
 /* .button{
     background-color: greenyellow;
@@ -18,7 +19,7 @@
     display: inline-block;
     padding: 10px 20px;
     color: #0a0a0a;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
@@ -26,7 +27,8 @@
     margin-top: 40px;
     margin: 28px;
     letter-spacing: 4px;
-    background-color: inherit;
+    background-color: transparent;
+    border: none;
   }
   
   .button:hover {
@@ -41,4 +43,14 @@
 
   .routes{
     text-decoration: none;
+    color: #0a0a0a;
+  }
+  .routes:hover {
+    /* background: #03f40b; */
+    color: #f9faf9;
+    /* border-radius: 5px;
+    box-shadow: 0 0 5px #03f40b,
+                0 0 25px #03f40b,
+                0 0 50px #03f40b,
+                0 0 100px #03f40b; */
   }

@@ -57,8 +57,8 @@ const mapStateToProps =(state)=>{
 
 const mapDispatchToProps= (dispatch)=>{
    return {
-      addfav:(character)=> dispatch(addfav(character)),
-      removeFav:(id)=> dispatch(removeFav(id))
+      addfav:(character)=>{ dispatch(addfav(character))},
+      removeFav:(id)=> {dispatch(removeFav(id))}
    }
 }
 

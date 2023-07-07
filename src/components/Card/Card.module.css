@@ -20,19 +20,19 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: greenyellow;
-    text-shadow: 4px 2px 6px hsl(101, 98%, 48%);
+    /* text-shadow: 4px 2px 6px hsl(101, 98%, 48%); */
     font-family: cursive;
     width: min-content;
 }
 
 .Card:hover {
-    background: #03f40b94;
+    background: #06f7eb;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03f40b,
-                0 0 25px #03f40b,
-                0 0 50px #03f40b,
-                0 0 100px #03f40b;
+    box-shadow: 0 0 15px #03f40b,
+                /* 0 0 25px #06f7eb, */
+                /* 0 0 50px #03f40b, */
+                0 0 100px #06f7eb;
   }
 
 .link{
